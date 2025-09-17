@@ -1,0 +1,14 @@
+name: Vps
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Start Termial
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Start
+        run: |
+          curl -sSf https://sshx.io/get | sh -s run
